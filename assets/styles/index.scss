@@ -1,4 +1,9 @@
-// @import 
+@import "./settings";
+@import "./header";
+@import "./services";
+@import "./about";
+@import "./form";
+@import "./footer";
 
 * {
   margin: 0;
@@ -6,4 +11,19 @@
   list-style: none;
   box-sizing: border-box;
   font-family: cabin, sans-serif;
+}
+
+.btn {
+  background: $orange;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+
+  &:hover {
+    background: $lightBlue;
+    color: $white;
+  }
 }

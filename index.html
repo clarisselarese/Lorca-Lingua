@@ -29,47 +29,52 @@
   <body>
     <header id="header">
       <div class="preheader">
-        <div class="contact">
-          <div class="email">
-            <p>
+        <div class="preheader-content">
+          <div class="contact">
+            <div class="email">
+              <p>
+                <img
+                  src="./assets/img/Icon_email.svg"
+                  alt="Icone email"
+                />c.lorca.garcia<span class="arobase">@</span>outlook.fr
+              </p>
+            </div>
+            <div class="phone">
+              <p>
+                <img
+                  src="./assets/img/Icon_phone.svg"
+                  alt="Icone téléphone"
+                />07 68 24 92 64
+              </p>
+            </div>
+          </div>
+          <div class="language">
+            <a href="">
               <img
-                src="./assets/img/Icon_email.svg"
-                alt="Icone email"
-              />c.lorca.garcia<span class="@">@</span>outlook.fr
-            </p>
+                src="./assets/img/Icon_language.svg"
+                alt="Icone langue"
+              />FR<i class="fa-solid fa-chevron-down"></i>
+            </a>
           </div>
-          <div class="phone">
-            <p>
-              <img src="./assets/img/Icon_phone.svg" alt="Icone téléphone" />07
-              68 24 92 64
-            </p>
-          </div>
-        </div>
-        <div class="language">
-          <p>
-            <img src="./assets/img/Icon_language.svg" alt="Icone langue" />FR<i
-              class="fa-solid fa-chevron-down"
-            ></i>
-          </p>
         </div>
       </div>
       <nav>
-        <img src="./assets/img/Logo.svg" class="logo" alt="Logo" />
+        <a href="/"><img src="./assets/img/Logo.svg" class="logo" alt="Logo" /></a>
         <ul>
           <li><a href="#header" class="nav-link">Accueil</a></li>
           <li><a href="#about" class="nav-link">À propos</a></li>
           <li><a href="#services" class="nav-link">Nos services</a></li>
-          <li><a href="#form">Devis/Contact</a></li>
+          <li><a class="btn" href="#form">Devis / Contact</a></li>
         </ul>
       </nav>
       <div class="hero">
-        <h1>Services professionnels d'interprétation et de traduction</h1>
+        <h1>Services professionnels <br> d'interprétation et de traduction</h1>
         <p>
           Grâce à mon expertise multilingue, je facilite vos échanges en
-          français, anglais et espagnol. Basée à Strasbourg, je me déplace selon
+          français, anglais et espagnol. <br> Basée à Strasbourg, je me déplace selon
           vos besoins pour des solutions linguistiques sur mesure.
         </p>
-        <a href="#form">Je demande mon devis</a>
+        <a class="btn" href="#form">Je demande mon devis</a>
       </div>
     </header>
 
@@ -241,9 +246,9 @@
           <div class="form-item">
             <label for="request">S'agit-il d'une demande urgente?</label>
             <div class="radio-group">
-              <input type="radio" id="yes" name="urgent" value="yes">
+              <input type="radio" id="yes" name="urgent" value="yes" />
               <label for="yes">Oui</label>
-              <input type="radio" id="no" name="urgent" value="no">
+              <input type="radio" id="no" name="urgent" value="no" />
               <label for="no">Non</label>
             </div>
           </div>
@@ -255,7 +260,7 @@
     <footer>
       <div class="footer-left">
         <img src="./assets/img/Logo.svg" alt="Logo" />
-        <p>Email: c.lorca.garcia<span class="@">@</span>outlook.fr</p>
+        <p>Email: c.lorca.garcia<span class="arobase">@</span>outlook.fr</p>
         <p>Téléphone: 07 68 24 92 64</p>
       </div>
       <div class="footer-right">

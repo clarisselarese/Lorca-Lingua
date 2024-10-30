@@ -1,3 +1,18 @@
-// VARIABLES
+// ----- VARIABLES ------ //
 
-// MIXINS
+// COLORS //
+$black: rgb(22, 22, 22);
+$white: rgb(246, 246, 246);
+$grey: rgb(201, 212, 224);
+$darkBlue: rgb(0, 53, 102);
+$lightBlue: rgb(0, 180, 189);
+$orange: rgb(236, 133, 29);
+
+// FONTS //
+$fontPrimary: "Cabin", sans-serif;
+
+// ----- MIXINS ------ //
+@mixin widthGeneral {
+  width: 85%;
+  margin: 0 auto;
+}

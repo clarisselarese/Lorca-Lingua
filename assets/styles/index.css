@@ -1,3 +1,136 @@
+header {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+header .preheader {
+  border-bottom: 1.5px solid rgb(201, 212, 224);
+}
+header .preheader .preheader-content {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6vh;
+  color: rgb(0, 53, 102);
+}
+header .preheader .preheader-content .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 64px;
+}
+header .preheader .preheader-content .contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .preheader .preheader-content .contact p img {
+  margin-right: 16px;
+}
+header .preheader .preheader-content .contact p .arobase {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .preheader .preheader-content .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+header .preheader .preheader-content .language a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: rgb(0, 53, 102);
+}
+header .preheader .preheader-content .language img {
+  margin-right: 8px;
+}
+header .preheader .preheader-content .language i {
+  margin-left: 8px;
+}
+header nav {
+  width: 85%;
+  margin: 0 auto;
+  min-height: 9vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px auto;
+}
+header nav img {
+  justify-self: start;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: end;
+  gap: 40px;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(0, 53, 102);
+}
+header nav a:hover {
+  color: rgb(236, 133, 29);
+}
+
+.hero {
+  min-height: 80vh;
+  background: url(../img/Hero_BG.png) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(246, 246, 246);
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+}
+.hero p {
+  font-size: 1.25rem;
+  line-height: 150%;
+  width: 60%;
+  text-align: center;
+  padding: 24px 0 40px 0;
+  text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +138,18 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: cabin, sans-serif;
+}
+
+.btn {
+  background: rgb(236, 133, 29);
+  color: rgb(246, 246, 246);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+}
+.btn:hover {
+  background: rgb(0, 180, 189);
+  color: rgb(246, 246, 246);
 }/*# sourceMappingURL=index.css.map */
