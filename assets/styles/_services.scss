@@ -1,0 +1,32 @@
+#services {
+  @include widthGeneral;
+  margin: 10% auto;
+
+  .inter-boxes {
+    margin: 40px 0 96px 0;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap: 4%;
+    justify-self: start;
+
+    h3 {
+      margin: 16px 0 8px 0;
+    }
+
+    p {
+      line-height: 180%;
+      font-size: 1.125rem;
+    }
+  }
+
+  .down-container {
+    display: grid;
+    grid-template-columns: 52% 48%;
+
+    p {
+      width: 80%;
+    }
+
+  }
+
+}

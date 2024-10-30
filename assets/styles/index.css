@@ -123,12 +123,38 @@ header nav a:hover {
   text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
 }
 .hero p {
-  font-size: 1.25rem;
-  line-height: 150%;
-  width: 60%;
+  width: 70%;
   text-align: center;
   padding: 24px 0 40px 0;
+  color: rgb(246, 246, 246);
   text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+}
+
+#services {
+  width: 85%;
+  margin: 0 auto;
+  margin: 10% auto;
+}
+#services .inter-boxes {
+  margin: 40px 0 96px 0;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  gap: 4%;
+  justify-self: start;
+}
+#services .inter-boxes h3 {
+  margin: 16px 0 8px 0;
+}
+#services .inter-boxes p {
+  line-height: 180%;
+  font-size: 1.125rem;
+}
+#services .down-container {
+  display: grid;
+  grid-template-columns: 52% 48%;
+}
+#services .down-container p {
+  width: 80%;
 }
 
 * {
@@ -152,4 +178,24 @@ header nav a:hover {
 .btn:hover {
   background: rgb(0, 180, 189);
   color: rgb(246, 246, 246);
+}
+
+h2 {
+  color: rgb(0, 53, 102);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(22, 22, 22);
+}
+
+h3 {
+  color: rgb(0, 53, 102);
+  font-size: 1.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
