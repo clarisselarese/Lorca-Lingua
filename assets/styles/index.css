@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   min-height: 100vh;
   margin: 0 auto;
@@ -149,6 +150,9 @@ header nav a:hover {
   line-height: 180%;
   font-size: 1.125rem;
 }
+#services .inter-boxes p span {
+  color: rgb(0, 180, 189);
+}
 #services .down-container {
   display: grid;
   grid-template-columns: 52% 48%;
@@ -183,6 +187,211 @@ header nav a:hover {
   font-size: 1.125rem;
 }
 
+#form {
+  width: 85%;
+  margin: 0 auto;
+  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#form h2 {
+  margin-bottom: 40px;
+}
+#form .form-container {
+  -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 90%;
+}
+#form .form-container form {
+  width: 80%;
+  margin: 64px auto;
+}
+#form .form-container form .form-row {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+#form .form-container form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+#form .form-container form .form-item label {
+  margin-bottom: 8px;
+}
+#form .form-container form .form-item label span {
+  color: red;
+}
+#form .form-container form .form-item input, #form .form-container form .form-item textarea {
+  height: 50px;
+  border-radius: 4px;
+  border: 1.5px solid rgb(201, 212, 224);
+  outline: none;
+  -webkit-transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  padding: 16px;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+#form .form-container form .form-item input:focus, #form .form-container form .form-item textarea:focus {
+  border: 1.5px solid rgb(0, 180, 189);
+  background: #F5FAFF;
+}
+#form .form-container form .form-item input:not(:-moz-placeholder-shown), #form .form-container form .form-item textarea:not(:-moz-placeholder-shown) {
+  border: 1.5px solid rgb(170, 170, 170);
+}
+#form .form-container form .form-item input:not(:-ms-input-placeholder), #form .form-container form .form-item textarea:not(:-ms-input-placeholder) {
+  border: 1.5px solid rgb(170, 170, 170);
+}
+#form .form-container form .form-item input:not(:placeholder-shown), #form .form-container form .form-item textarea:not(:placeholder-shown) {
+  border: 1.5px solid rgb(170, 170, 170);
+}
+#form .form-container form .form-item textarea {
+  height: 200px;
+  resize: none;
+}
+#form .form-container form .form-item .upload-label {
+  position: relative;
+  width: 100%;
+  border: 1.5px dotted rgb(201, 212, 224);
+  border-radius: 4px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+}
+#form .form-container form .form-item .upload-label i {
+  font-size: 24px;
+}
+#form .form-container form .form-item .placeholder {
+  font-size: 16px;
+  color: rgb(170, 170, 170);
+}
+#form .form-container form .form-item input[type=file] {
+  display: none; /* cache l'input réel */
+}
+#form .form-container form .form-item .radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+#form .form-container form .form-item .radio-group .yes, #form .form-container form .form-item .radio-group .no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+#form .form-container form .form-item .radio-group .yes .radio, #form .form-container form .form-item .radio-group .no .radio {
+  margin: 0;
+  color: rgb(22, 22, 22);
+  font-size: 0.875rem;
+}
+#form .form-container form .form-item input[type=radio] {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid rgb(201, 212, 224);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+#form .form-container form .form-item input[type=radio]:checked::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 180, 189);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#form .form-container form .form-item .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: rgb(22, 22, 22);
+}
+#form .form-container form .form-item input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  border: 2px solid rgb(201, 212, 224);
+  position: relative;
+  cursor: pointer;
+}
+#form .form-container form .form-item input[type=checkbox]:checked::before {
+  content: "✓";
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: rgb(0, 180, 189);
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -200,6 +409,7 @@ header nav a:hover {
   text-decoration: none;
   border-radius: 8px;
   padding: 16px 32px;
+  border: none;
 }
 .btn:hover {
   background: rgb(0, 180, 189);
@@ -224,4 +434,9 @@ h3 {
   color: rgb(0, 53, 102);
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+label {
+  font-size: 1rem;
+  color: rgb(0, 53, 102);
 }/*# sourceMappingURL=index.css.map */

@@ -59,7 +59,9 @@
         </div>
       </div>
       <nav>
-        <a href="/"><img src="./assets/img/Logo.svg" class="logo" alt="Logo" /></a>
+        <a href="/"
+          ><img src="./assets/img/Logo.svg" class="logo" alt="Logo"
+        /></a>
         <ul>
           <li><a href="#header" class="nav-link">Accueil</a></li>
           <li><a href="#about" class="nav-link">À propos</a></li>
@@ -68,7 +70,10 @@
         </ul>
       </nav>
       <div class="hero">
-        <h1>Services professionnels <br> d'interprétation et de traduction</h1>
+        <h1>
+          Services professionnels <br />
+          d'interprétation et de traduction
+        </h1>
         <p class="lead">
           Grâce à mon expertise multilingue, je facilite vos échanges en
           français, anglais et espagnol. Basée à Strasbourg, je me déplace selon
@@ -80,21 +85,24 @@
 
     <section id="services">
       <div class="up-container">
-          <h2>Services d'interprétation</h2>
-          <p class="lead">
-            Réunion professionnelle, sortie culturelle, rendez-vous
-            administratif, événement multilingue ? J’interprète en espagnol,
-            français et anglais pour garantir le succès de vos échanges
-            interculturels. N'hésitez pas à me contacter pour choisir la
-            technique la plus adaptée à vos besoins :
-          </p>
+        <h2>Services d'interprétation</h2>
+        <p class="lead">
+          Réunion professionnelle, sortie culturelle, rendez-vous administratif,
+          événement multilingue ? J’interprète en espagnol, français et anglais
+          pour garantir le succès de vos échanges interculturels. N'hésitez pas
+          à me contacter pour choisir la technique la plus adaptée à vos besoins
+          :
+        </p>
         <div class="inter-boxes">
           <div class="inter-box">
             <img
               src="./assets/img/Icon_Interpretation_1.svg"
               alt="Icone trois personnes qui parlent"
             />
-            <h3>Interprétation <br> de liaison</h3>
+            <h3>
+              Interprétation <br />
+              de liaison
+            </h3>
             <p>
               <span class="blue-text">En petit comité,</span> je facilite vos
               échanges en traduisant phrase par phrase en alternance avec
@@ -107,7 +115,10 @@
               src="./assets/img/Icon_Interpretation_2.svg"
               alt="Icone une personne qui parle à d'autres personnes"
             />
-            <h3>Interprétation <br> consécutive</h3>
+            <h3>
+              Interprétation <br />
+              consécutive
+            </h3>
             <p>
               Lors d’une prise de parole
               <span class="blue-text">devant une audience,</span> je prends des
@@ -121,7 +132,10 @@
               src="./assets/img/Icon_Interpretation_3.svg"
               alt="Icone une personne qui parle avec un casque"
             />
-            <h3>Interprétation <br> simultanée</h3>
+            <h3>
+              Interprétation <br />
+              simultanée
+            </h3>
             <p>
               Pendant que l'orateur parle, je traduis<span class="blue-text">
                 en temps réel</span
@@ -170,7 +184,7 @@
       <div class="about-left">
         <img
           src="./assets/img/About.png"
-          alt="Photo d'une femme qui travaille"
+          alt="Photo d'une femme qui travaille sur son ordinateur"
         />
       </div>
       <div class="about-right">
@@ -196,60 +210,70 @@
         <form action="">
           <div class="form-row">
             <div class="form-item">
-              <label for="surname">Nom</label>
-              <input type="text" id="surname" required />
+              <label for="surname">Nom<span>*</span></label>
+              <input type="text" id="surname" placeholder="" required />
               <div class="error-surname" id="surnameError"></div>
             </div>
             <div class="form-item">
-              <label for="name">Prénom</label>
-              <input type="text" id="name" required />
+              <label for="name">Prénom<span>*</span></label>
+              <input type="text" id="name" placeholder="" required />
               <div class="error-name" id="nameError"></div>
             </div>
           </div>
           <div class="form-item">
-            <label for="enterprise">Entreprise/Organisation</label>
-            <input type="text" id="enterprise" />
+            <label for="enterprise">Entreprise / Organisation</label>
+            <input type="text" id="enterprise" placeholder="" />
           </div>
           <div class="form-row">
             <div class="form-item">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" required />
+              <label for="email">E-mail<span>*</span></label>
+              <input type="email" id="email" placeholder="" required />
               <div class="error-email" id="emailError"></div>
             </div>
             <div class="form-item">
               <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" />
+              <input type="tel" id="phone" placeholder="" />
               <div class="error-phone" id="phoneError"></div>
             </div>
           </div>
           <div class="form-item">
-            <label for="message">Votre message</label>
-            <textarea name="message" id="message" required></textarea>
+            <label for="message">Votre message<span>*</span></label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder=""
+              required
+            ></textarea>
             <div class="error-message" id="messageError"></div>
           </div>
           <div class="form-item form-upload">
-            <label for="upload">
+            <label>Joindre un document</label>
+            <label for="upload" class="upload-label">
               <i class="fa-solid fa-cloud-arrow-up"></i>
-              <span class="placeholder">Téléchargez votre fichier</span>Joindre
-              un document</label
-            >
-            <input
-              type="file"
-              id="upload"
-              placeholder="Cliquez ici"
-              accept=".pdf,.doc,.docx,.jpg,.png"
-            />
+              <span class="placeholder">Cliquez ici pour télécharger votre fichier</span>
+            </label>
+            <input type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
           </div>
           <div class="form-item">
             <label for="request">S'agit-il d'une demande urgente?</label>
             <div class="radio-group">
-              <input type="radio" id="yes" name="urgent" value="yes" />
-              <label for="yes">Oui</label>
-              <input type="radio" id="no" name="urgent" value="no" />
-              <label for="no">Non</label>
+              <div class="yes">
+                <input type="radio" id="yes" name="urgent" value="yes" />
+                <label class="radio" for="yes">Oui</label>
+              </div>
+              <div class="no">
+                <input type="radio" id="no" name="urgent" value="no" />
+                <label class="radio" for="no">Non</label>
+              </div>
             </div>
           </div>
-          <button type="submit">Envoyer ma demande</button>
+          <div class="form-item">
+            <label class="checkbox" for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" required>
+              J'accepte que mes données soient collectées et utilisées conformément à la politique de confidentialité.
+            </label>
+          </div>
+          <button class="btn btn-form" type="submit">Envoyer ma demande</button>
         </form>
       </div>
     </section>
