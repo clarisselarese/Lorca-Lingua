@@ -15,6 +15,11 @@ header {
       min-height: 6vh;
       color: $darkBlue;
 
+      a {
+        text-decoration: none;
+        color: $darkBlue;
+      }
+
       .contact {
         display: flex;
         align-items: center;
@@ -73,44 +78,43 @@ header {
       align-items: center;
       justify-self: end;
       gap: 40px;
-      }
-
-      a {
-        text-decoration: none;
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: $darkBlue;
-
-        &:hover {
-          color: $orange;
-        }
-      }
     }
-  }
 
-  .hero {
-    min-height: 80vh;
-    background: url(../img/Hero_BG.png) center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-
-    h1 {
-      font-size: 3.5rem;
+    a {
+      text-decoration: none;
+      font-size: 1.125rem;
       font-weight: 700;
-      line-height: 140%;
-      text-align: center;
-      text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.60);
-    }
+      color: $darkBlue;
 
-    p {
-      width: 70%;
-      text-align: center;
-      padding: 24px 0 40px 0;
-      color: $white;
-      text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.60);
+      &:hover {
+        color: $orange;
+      }
     }
   }
+}
 
+.hero {
+  min-height: 80vh;
+  background: url(../img/Hero_BG.png) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  p {
+    width: 70%;
+    text-align: center;
+    padding: 24px 0 40px 0;
+    color: $white;
+    text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+  }
+}

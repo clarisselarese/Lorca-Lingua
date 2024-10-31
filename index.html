@@ -33,10 +33,8 @@
           <div class="contact">
             <div class="email">
               <p>
-                <img
-                  src="./assets/img/Icon_email.svg"
-                  alt="Icone email"
-                />c.lorca.garcia<span class="arobase">@</span>outlook.fr
+                <img src="./assets/img/Icon_email.svg" alt="Icône email" />
+                <a href="mailto:c.lorca.garcia@outlook.fr">c.lorca.garcia<span class="arobase">@</span>outlook.fr</a>
               </p>
             </div>
             <div class="phone">
@@ -250,7 +248,9 @@
             <label>Joindre un document</label>
             <label for="upload" class="upload-label">
               <i class="fa-solid fa-cloud-arrow-up"></i>
-              <span class="placeholder">Cliquez ici pour télécharger votre fichier</span>
+              <span class="placeholder"
+                >Cliquez ici pour télécharger votre fichier</span
+              >
             </label>
             <input type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
           </div>
@@ -269,8 +269,9 @@
           </div>
           <div class="form-item">
             <label class="checkbox" for="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" required>
-              J'accepte que mes données soient collectées et utilisées conformément à la politique de confidentialité.
+              <input type="checkbox" name="checkbox" id="checkbox" required />
+              J'accepte que mes données soient collectées et utilisées
+              conformément à la politique de confidentialité.
             </label>
           </div>
           <button class="btn btn-form" type="submit">Envoyer ma demande</button>
@@ -279,24 +280,29 @@
     </section>
 
     <footer>
-      <div class="footer-left">
-        <img src="./assets/img/Logo.svg" alt="Logo" />
-        <p>Email: c.lorca.garcia<span class="arobase">@</span>outlook.fr</p>
-        <p>Téléphone: 07 68 24 92 64</p>
-      </div>
-      <div class="footer-right">
-        <div class="linkedin">
-          <p>
-            Suivez nous <br />
-            sur Linkedin
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="./assets/img/Logo.svg" alt="Logo" />
+          <p class="email-footer">
+            Email: 
+            <a href="mailto:c.lorca.garcia@outlook.fr">c.lorca.garcia<span class="arobase">@</span>outlook.fr</a>
           </p>
-          <i class="fa-brands fa-linkedin"></i>
+          <p class="phone-footer">Téléphone: 07 68 24 92 64</p>
         </div>
-        <div class="legal-container">
-          <p>© LORCA GARCIA Traductions</p>
-          <div class="legal-group">
-            <p>Mentions légales</p>
-            <p>Politique de confidentialité</p>
+        <div class="footer-right">
+          <div class="linkedin">
+            <p>
+              Suivez nous <br />
+              sur Linkedin
+            </p>
+            <a href="https://fr.linkedin.com/in/cathereen-lorca-garcia" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="legal-container">
+            <p>© LORCA GARCIA Traductions</p>
+            <div class="legal-group">
+              <a href="">Mentions légales</a>
+              <a href="">Politique de confidentialité</a>
+            </div>
           </div>
         </div>
       </div>

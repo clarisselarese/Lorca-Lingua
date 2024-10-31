@@ -17,6 +17,10 @@ header .preheader .preheader-content {
   min-height: 6vh;
   color: rgb(0, 53, 102);
 }
+header .preheader .preheader-content a {
+  text-decoration: none;
+  color: rgb(0, 53, 102);
+}
 header .preheader .preheader-content .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +394,56 @@ header nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  border: 1.5px solid rgb(201, 212, 224);
+  color: rgb(22, 22, 22);
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+footer .footer-container a {
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+}
+footer .footer-container .email-footer {
+  margin: 60px 0 16px 0;
+}
+footer .footer-container .email-footer .arobase {
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer-container .footer-right {
+  justify-self: end;
+}
+footer .footer-container .footer-right .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  line-height: 150%;
+}
+footer .footer-container .footer-right .linkedin i {
+  font-size: 40px;
+  color: rgb(236, 133, 29);
+}
+footer .footer-container .footer-right .legal-container {
+  margin-top: 64px;
+}
+footer .footer-container .footer-right .legal-container .legal-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 48px;
+  margin-top: 24px;
 }
 
 * {
