@@ -1,4 +1,4 @@
-#form {
+#form-section {
   @include widthGeneral;
   margin: 10% auto;
   display: flex;
@@ -58,6 +58,12 @@
         textarea {
           height: 200px;
           resize: none;
+        }
+
+        .form-error {
+          color: red;
+          margin-top: 8px;
+          font-size: 0.875rem;
         }
 
         .upload-label {

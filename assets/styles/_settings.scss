@@ -16,3 +16,8 @@ $fontPrimary: "Cabin", sans-serif;
   width: 85%;
   margin: 0 auto;
 }
+
+@mixin widthGeneral480px {
+  width: 95%;
+  margin: 0 auto;
+}

@@ -34,7 +34,9 @@
             <div class="email">
               <p>
                 <img src="./assets/img/Icon_email.svg" alt="Icône email" />
-                <a href="mailto:c.lorca.garcia@outlook.fr">c.lorca.garcia<span class="arobase">@</span>outlook.fr</a>
+                <a href="mailto:c.lorca.garcia@outlook.fr"
+                  >c.lorca.garcia<span class="arobase">@</span>outlook.fr</a
+                >
               </p>
             </div>
             <div class="phone">
@@ -66,18 +68,27 @@
           <li><a href="#services" class="nav-link">Nos services</a></li>
           <li><a class="btn" href="#form">Devis / Contact</a></li>
         </ul>
+        <div class="language-mobile">
+          <a href="">
+            <img src="./assets/img/Icon_language.svg" alt="Icone langue" />FR<i
+              class="fa-solid fa-chevron-down"
+            ></i>
+          </a>
+        </div>
       </nav>
       <div class="hero">
-        <h1>
-          Services professionnels <br />
-          d'interprétation et de traduction
-        </h1>
-        <p class="lead">
-          Grâce à mon expertise multilingue, je facilite vos échanges en
-          français, anglais et espagnol. Basée à Strasbourg, je me déplace selon
-          vos besoins pour des solutions linguistiques sur mesure.
-        </p>
-        <a class="btn" href="#form">Je demande mon devis</a>
+        <div class="hero-content">
+          <h1>
+            Services professionnels <br />
+            d'interprétation et de traduction
+          </h1>
+          <p class="lead">
+            Grâce à mon expertise multilingue, je facilite vos échanges en
+            français, anglais et espagnol. Basée à Strasbourg, je me déplace
+            selon vos besoins pour des solutions linguistiques sur mesure.
+          </p>
+          <a class="btn" href="#form">Je demande mon devis</a>
+        </div>
       </div>
     </header>
 
@@ -189,33 +200,33 @@
         <h2>À propos</h2>
         <p>
           Interprète et traductrice expérimentée, je mets à votre service une
-          solide expertise en développée au fil de missions auprès
-          d’institutions telles que la Police Nationale, la Cour Nationale du
-          Droit d'Asile et des hôpitaux en France et aux États-Unis.
+          solide expertise développée lors de missions auprès d’institutions
+          telles que la Police Nationale, la Cour Nationale du Droit d'Asile et
+          des hôpitaux en France et aux États-Unis.
           <br />Titulaire d’un Master en Langues Étrangères Appliquées de
           l’Université Paris Diderot, d’une formation en anglais en Irlande,
           ainsi que d’un Bac + 5 en Sciences Sociales obtenu en espagnol, je
           garantis des échanges clairs et fidèles, en respectant les nuances
-          culturelles et assurant une communication efficace en français,
+          culturelles tout en assurant une communication efficace en français,
           anglais et espagnol.
         </p>
       </div>
     </section>
 
-    <section id="form">
+    <section id="form-section">
       <h2>Besoin d'un devis ou d’informations ?</h2>
       <div class="form-container">
-        <form action="">
+        <form action="" id="contact-form" novalidate>
           <div class="form-row">
             <div class="form-item">
               <label for="surname">Nom<span>*</span></label>
               <input type="text" id="surname" placeholder="" required />
-              <div class="error-surname" id="surnameError"></div>
+              <div class="form-error" id="surnameError"></div>
             </div>
             <div class="form-item">
               <label for="name">Prénom<span>*</span></label>
               <input type="text" id="name" placeholder="" required />
-              <div class="error-name" id="nameError"></div>
+              <div class="form-error" id="nameError"></div>
             </div>
           </div>
           <div class="form-item">
@@ -226,12 +237,12 @@
             <div class="form-item">
               <label for="email">E-mail<span>*</span></label>
               <input type="email" id="email" placeholder="" required />
-              <div class="error-email" id="emailError"></div>
+              <div class="form-error" id="emailError"></div>
             </div>
             <div class="form-item">
               <label for="phone">Téléphone</label>
               <input type="tel" id="phone" placeholder="" />
-              <div class="error-phone" id="phoneError"></div>
+              <div class="form-error" id="phoneError"></div>
             </div>
           </div>
           <div class="form-item">
@@ -242,7 +253,7 @@
               placeholder=""
               required
             ></textarea>
-            <div class="error-message" id="messageError"></div>
+            <div class="form-error" id="messageError"></div>
           </div>
           <div class="form-item form-upload">
             <label>Joindre un document</label>
@@ -273,6 +284,7 @@
               J'accepte que mes données soient collectées et utilisées
               conformément à la politique de confidentialité.
             </label>
+            <div class="form-error" id="checkboxError"></div>
           </div>
           <button class="btn btn-form" type="submit">Envoyer ma demande</button>
         </form>
@@ -284,8 +296,10 @@
         <div class="footer-left">
           <img src="./assets/img/Logo.svg" alt="Logo" />
           <p class="email-footer">
-            Email: 
-            <a href="mailto:c.lorca.garcia@outlook.fr">c.lorca.garcia<span class="arobase">@</span>outlook.fr</a>
+            Email:
+            <a href="mailto:c.lorca.garcia@outlook.fr"
+              >c.lorca.garcia<span class="arobase">@</span>outlook.fr</a
+            >
           </p>
           <p class="phone-footer">Téléphone: 07 68 24 92 64</p>
         </div>
@@ -295,7 +309,11 @@
               Suivez nous <br />
               sur Linkedin
             </p>
-            <a href="https://fr.linkedin.com/in/cathereen-lorca-garcia" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a
+              href="https://fr.linkedin.com/in/cathereen-lorca-garcia"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
           <div class="legal-container">
             <p>© LORCA GARCIA Traductions</p>
@@ -307,5 +325,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./form-validation.js"></script>
   </body>
 </html>

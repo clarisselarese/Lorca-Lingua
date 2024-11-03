@@ -1,5 +1,7 @@
 @import "./settings";
-@import "./header";
+@import "./preheader";
+@import "./navbar";
+@import "./hero";
 @import "./services";
 @import "./about";
 @import "./form";
@@ -11,6 +13,11 @@
   list-style: none;
   box-sizing: border-box;
   font-family: cabin, sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 .btn {
@@ -34,6 +41,12 @@ h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 24px;
+
+  // MEDIA QUERIES ------------------------------------------------------
+  @media (max-width: 500px) {
+    font-size: 1.875rem;
+    margin-bottom: 16px;
+  }
 }
 
 .lead {
@@ -47,7 +60,12 @@ h3 {
   color: $darkBlue;
   font-size: 1.5rem;
   font-weight: 700;
-}
+
+  // MEDIA QUERIES ------------------------------------------------------
+  @media (max-width: 500px) {
+    font-size: 1.375rem;
+  }
+  }
 
 label {
   font-size: 1rem;
