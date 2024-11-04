@@ -293,6 +293,8 @@ nav .language-mobile i {
 }
 @media (max-width: 800px) {
   #services {
+    width: 95%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -301,7 +303,20 @@ nav .language-mobile i {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 40px;
-    margin-bottom: 64px;
+    margin: 64px auto;
+  }
+  #services .down-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+  }
+  #services .down-container .lead {
+    width: 100%;
   }
 }
 
