@@ -64,4 +64,23 @@
       }
     }
   }
+
+  @media (max-width: 480px) {
+    .up-container {
+
+      .inter-boxes {
+        margin-bottom: 16px;
+        
+        p {
+          font-size: 1rem;
+          line-height: 150%;
+        }
+
+        img {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
 }

@@ -37,4 +37,15 @@
       padding: 56px;
     }
   }
+
+  @media (max-width: 480px) {
+    .about-right {
+      padding: 64px 16px;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+  }
 }

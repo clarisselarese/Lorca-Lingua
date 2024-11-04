@@ -43,7 +43,7 @@ h2 {
   margin-bottom: 24px;
 
   // MEDIA QUERIES ------------------------------------------------------
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     font-size: 1.875rem;
     margin-bottom: 16px;
   }
@@ -54,6 +54,11 @@ h2 {
   font-weight: 400;
   line-height: 150%;
   color: $black;
+
+  // MEDIA QUERIES ------------------------------------------------------
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 h3 {
@@ -62,10 +67,10 @@ h3 {
   font-weight: 700;
 
   // MEDIA QUERIES ------------------------------------------------------
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     font-size: 1.375rem;
   }
-  }
+}
 
 label {
   font-size: 1rem;
