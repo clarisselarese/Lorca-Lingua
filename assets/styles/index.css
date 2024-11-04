@@ -158,7 +158,7 @@ nav .language-mobile i {
 }
 
 .hero {
-  min-height: 80vh;
+  height: 80vh;
   background: url(../img/Hero_BG.png) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +215,6 @@ nav .language-mobile i {
 }
 @media (max-width: 700px) {
   .hero {
-    height: 70vh;
     background: url(../img/Hero_BG_700px.png) center/cover;
   }
   .hero .hero-content {
@@ -243,8 +242,18 @@ nav .language-mobile i {
 }
 @media (max-width: 480px) {
   .hero {
-    height: 600px;
+    height: 500px;
     background: url(../img/Hero_BG_480px.png) center/cover;
+    background-position: top;
+  }
+  .hero .hero-content {
+    padding-top: 80px;
+  }
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero .hero-content p {
+    font-size: 1rem;
   }
 }
 
@@ -405,6 +414,7 @@ nav .language-mobile i {
 }
 #form-section h2 {
   margin-bottom: 40px;
+  text-align: center;
 }
 #form-section .form-container {
   -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
@@ -437,7 +447,8 @@ nav .language-mobile i {
 #form-section .form-container form .form-item label span {
   color: red;
 }
-#form-section .form-container form .form-item input, #form-section .form-container form .form-item textarea {
+#form-section .form-container form .form-item input,
+#form-section .form-container form .form-item textarea {
   height: 50px;
   border-radius: 4px;
   border: 1.5px solid rgb(201, 212, 224);
@@ -450,9 +461,10 @@ nav .language-mobile i {
   -webkit-transition: border 0.5s;
   transition: border 0.5s;
 }
-#form-section .form-container form .form-item input:focus, #form-section .form-container form .form-item textarea:focus {
+#form-section .form-container form .form-item input:focus,
+#form-section .form-container form .form-item textarea:focus {
   border: 1.5px solid rgb(0, 180, 189);
-  background: #F5FAFF;
+  background: #f5faff;
 }
 #form-section .form-container form .form-item input:not(:-moz-placeholder-shown), #form-section .form-container form .form-item textarea:not(:-moz-placeholder-shown) {
   border: 1.5px solid rgb(170, 170, 170);
@@ -460,7 +472,8 @@ nav .language-mobile i {
 #form-section .form-container form .form-item input:not(:-ms-input-placeholder), #form-section .form-container form .form-item textarea:not(:-ms-input-placeholder) {
   border: 1.5px solid rgb(170, 170, 170);
 }
-#form-section .form-container form .form-item input:not(:placeholder-shown), #form-section .form-container form .form-item textarea:not(:placeholder-shown) {
+#form-section .form-container form .form-item input:not(:placeholder-shown),
+#form-section .form-container form .form-item textarea:not(:placeholder-shown) {
   border: 1.5px solid rgb(170, 170, 170);
 }
 #form-section .form-container form .form-item textarea {
@@ -512,7 +525,8 @@ nav .language-mobile i {
           align-items: center;
   gap: 40px;
 }
-#form-section .form-container form .form-item .radio-group .yes, #form-section .form-container form .form-item .radio-group .no {
+#form-section .form-container form .form-item .radio-group .yes,
+#form-section .form-container form .form-item .radio-group .no {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +536,8 @@ nav .language-mobile i {
   gap: 8px;
   margin-top: 8px;
 }
-#form-section .form-container form .form-item .radio-group .yes .radio, #form-section .form-container form .form-item .radio-group .no .radio {
+#form-section .form-container form .form-item .radio-group .yes .radio,
+#form-section .form-container form .form-item .radio-group .no .radio {
   margin: 0;
   color: rgb(22, 22, 22);
   font-size: 0.875rem;
@@ -596,6 +611,23 @@ nav .language-mobile i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 720px) {
+  #form-section {
+    margin: 48px auto;
+  }
+  #form-section .form-container {
+    width: 100%;
+  }
+  #form-section .form-container .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer {
@@ -727,11 +759,6 @@ footer .footer-container .footer-right .legal-container .legal-group {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: cabin, sans-serif;
-}
-
-header {
-  min-height: 100vh;
-  margin: 0 auto;
 }
 
 .btn {

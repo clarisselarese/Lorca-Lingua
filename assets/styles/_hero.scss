@@ -1,5 +1,5 @@
 .hero {
-  min-height: 80vh;
+  height: 80vh;
   background: url(../img/Hero_BG.png) center/cover;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
       text-align: center;
       text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
     }
-  
+
     p {
       width: 70%;
       text-align: center;
@@ -30,7 +30,6 @@
       text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
     }
   }
-
 
   // MEDIA QUERIES ------------------------------------------------------
   @media (max-width: 850px) {
@@ -44,9 +43,8 @@
       }
     }
   }
- 
+
   @media (max-width: 700px) {
-    height: 70vh;
     background: url(../img/Hero_BG_700px.png) center/cover;
 
     .hero-content {
@@ -59,7 +57,7 @@
         font-size: 2.5rem;
         line-height: 120%;
       }
-  
+
       p {
         font-size: 1.2rem;
       }
@@ -67,7 +65,20 @@
   }
 
   @media (max-width: 480px) {
-    height: 600px;
+    height: 500px;
     background: url(../img/Hero_BG_480px.png) center/cover;
+    background-position: top;
+
+    .hero-content {
+      padding-top: 80px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
   }
 }
