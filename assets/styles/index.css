@@ -209,10 +209,13 @@ nav .language-mobile i {
   .hero .hero-content h1 {
     font-size: 3rem;
   }
+  .hero .hero-content p {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .hero {
-    height: 90vh;
+    height: 70vh;
     background: url(../img/Hero_BG_700px.png) center/cover;
   }
   .hero .hero-content {
@@ -240,7 +243,8 @@ nav .language-mobile i {
 }
 @media (max-width: 480px) {
   .hero {
-    max-height: 200px;
+    height: 600px;
+    background: url(../img/Hero_BG_480px.png) center/cover;
   }
 }
 
