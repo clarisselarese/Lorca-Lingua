@@ -48,4 +48,52 @@ footer {
       }
     }
   }
+
+  // MEDIA QUERIES -------------------------------------
+  @media (max-width: 600px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .footer-right {
+        .linkedin {
+          justify-content: center;
+          margin-top: 16px;
+          gap: 16px;
+
+          br {
+            display: none;
+          }
+
+          i {
+            font-size: 32px;
+          }
+        }
+
+        .legal-container {
+          margin-top: 56px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .legal-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+          }
+        }
+      }
+    }
+  }
 }
