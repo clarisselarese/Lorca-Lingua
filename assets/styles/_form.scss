@@ -185,9 +185,17 @@
     .form-container {
       width: 100%;
 
-      .form-row {
-        display: flex;
-        flex-direction: column;
+      form {
+        .form-row {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .btn-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
