@@ -64,8 +64,13 @@
 
         .form-error {
           color: red;
-          margin-top: 8px;
           font-size: 0.875rem;
+          margin-top: 8px;
+        }
+
+        #checkboxError {
+          margin-top: 0;
+          margin-left: 8px;
         }
 
         .upload-label {
@@ -186,9 +191,15 @@
       width: 100%;
 
       form {
+        margin: 48px auto;
+
         .form-row {
           display: flex;
           flex-direction: column;
+        }
+
+        .form-item {
+          margin-bottom: 16px;
         }
 
         .btn-container {

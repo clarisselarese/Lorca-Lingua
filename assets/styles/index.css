@@ -482,8 +482,12 @@ nav .language-mobile i {
 }
 #form-section .form-container form .form-item .form-error {
   color: red;
-  margin-top: 8px;
   font-size: 0.875rem;
+  margin-top: 8px;
+}
+#form-section .form-container form .form-item #checkboxError {
+  margin-top: 0;
+  margin-left: 8px;
 }
 #form-section .form-container form .form-item .upload-label {
   position: relative;
@@ -619,6 +623,9 @@ nav .language-mobile i {
   #form-section .form-container {
     width: 100%;
   }
+  #form-section .form-container form {
+    margin: 48px auto;
+  }
   #form-section .form-container form .form-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,6 +634,9 @@ nav .language-mobile i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #form-section .form-container form .form-item {
+    margin-bottom: 16px;
   }
   #form-section .form-container form .btn-container {
     display: -webkit-box;
