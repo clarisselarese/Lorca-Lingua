@@ -206,6 +206,9 @@ nav .language-mobile i {
   text-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 850px) {
+  .hero .hero-content {
+    width: 85%;
+  }
   .hero .hero-content h1 {
     font-size: 3rem;
   }
@@ -242,7 +245,7 @@ nav .language-mobile i {
 }
 @media (max-width: 480px) {
   .hero {
-    height: 500px;
+    height: 550px;
     background: url(../img/Hero_BG_480px.png) center/cover;
     background-position: top;
   }

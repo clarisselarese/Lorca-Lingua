@@ -34,6 +34,8 @@
   // MEDIA QUERIES ------------------------------------------------------
   @media (max-width: 850px) {
     .hero-content {
+      width: 85%;
+
       h1 {
         font-size: 3rem;
       }
@@ -65,7 +67,7 @@
   }
 
   @media (max-width: 480px) {
-    height: 500px;
+    height: 550px;
     background: url(../img/Hero_BG_480px.png) center/cover;
     background-position: top;
 
