@@ -24,12 +24,13 @@
   border-radius: 8px;
   padding: 16px 32px;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background: $lightBlue;
     color: $white;
   }
-}
+  }
 
 h2 {
   color: $darkBlue;
@@ -70,4 +71,11 @@ h3 {
 label {
   font-size: 1rem;
   color: $darkBlue;
+}
+
+// MEDIA QUERIES ---------------------------------
+@media (max-width: 700px) {
+  .btn:hover {
+    background-color: $orange;
+  }
 }
