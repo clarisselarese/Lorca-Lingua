@@ -11,6 +11,9 @@ const form = document.getElementById("contact-form");
 form.addEventListener("submit", (e) => {
   if (!validate()) {
     e.preventDefault();
+  }else {
+    const form = document.getElementById("contact-form");
+    form.reset();
   }
 });
 
@@ -122,4 +125,9 @@ function validateConditions() {
   } else {
     return true;
   }
+}
+
+function deleteFormData() {
+  const form = document.getElementById("contact-form");
+  form.reset();
 }

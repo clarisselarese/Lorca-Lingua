@@ -216,32 +216,42 @@
     <section id="form-section">
       <h2>Besoin d'un devis ou d’informations ?</h2>
       <div class="form-container">
-        <form action="" id="contact-form" novalidate>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contact-form"
+          novalidate
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="26a5714a-9f84-453f-86aa-1e279e26588e"
+          />
           <div class="form-row">
             <div class="form-item">
               <label for="surname">Nom<span>*</span></label>
-              <input type="text" id="surname" placeholder="" required />
+              <input name="surname" type="text" id="surname" placeholder="" required />
               <div class="form-error" id="surnameError"></div>
             </div>
             <div class="form-item">
               <label for="name">Prénom<span>*</span></label>
-              <input type="text" id="name" placeholder="" required />
+              <input name="name" type="text" id="name" placeholder="" required />
               <div class="form-error" id="nameError"></div>
             </div>
           </div>
           <div class="form-item">
             <label for="enterprise">Entreprise / Organisation</label>
-            <input type="text" id="enterprise" placeholder="" />
+            <input name="enterprise" type="text" id="enterprise" placeholder="" />
           </div>
           <div class="form-row">
             <div class="form-item">
               <label for="email">E-mail<span>*</span></label>
-              <input type="email" id="email" placeholder="" required />
+              <input name="email" type="email" id="email" placeholder="" required />
               <div class="form-error" id="emailError"></div>
             </div>
             <div class="form-item">
               <label for="phoneNumber">Téléphone</label>
-              <input type="tel" id="phoneNumber" placeholder="" />
+              <input name="phone-number" type="tel" id="phoneNumber" placeholder="" />
               <div class="form-error" id="phoneNumberError"></div>
             </div>
           </div>
@@ -263,7 +273,7 @@
                 >Cliquez ici pour télécharger votre fichier</span
               >
             </label>
-            <input type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
+            <input name="file" type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
           </div>
           <div class="form-item">
             <label for="request">S'agit-il d'une demande urgente?</label>
@@ -287,9 +297,10 @@
             <div class="form-error" id="checkboxError"></div>
           </div>
           <div class="btn-container">
-            <button class="btn btn-form" type="submit">Envoyer ma demande</button>
+            <button class="btn btn-form" type="submit">
+              Envoyer ma demande
+            </button>
           </div>
-
         </form>
       </div>
     </section>
@@ -321,8 +332,8 @@
           <div class="legal-container">
             <p>© LORCA GARCIA Traductions</p>
             <div class="legal-group">
-              <a href="">Mentions légales</a>
-              <a href="">Politique de confidentialité</a>
+              <a href="./legal-information.html">Mentions légales</a>
+              <a href="./privacy-policy.html">Politique de confidentialité</a>
             </div>
           </div>
         </div>

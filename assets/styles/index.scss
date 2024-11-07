@@ -1,11 +1,11 @@
 @import "./settings";
-@import "./preheader";
-@import "./navbar";
-@import "./hero";
-@import "./services";
-@import "./about";
-@import "./form";
-@import "./footer";
+@import "./components/preheader";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/about";
+@import "./components/form";
+@import "./components/footer";
 
 * {
   margin: 0;
