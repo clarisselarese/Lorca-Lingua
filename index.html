@@ -217,8 +217,9 @@
       <h2>Besoin d'un devis ou d’informations ?</h2>
       <div class="form-container">
         <form
-          action="https://api.web3forms.com/submit"
+          action="/upload"
           method="POST"
+          enctype="multipart/form-data"
           id="contact-form"
           novalidate
         >
@@ -262,13 +263,13 @@
           </div>
           <div class="form-item form-upload">
             <label>Joindre un document</label>
-            <label for="upload" class="upload-label">
+            <label for="file" class="upload-label">
               <i class="fa-solid fa-cloud-arrow-up"></i>
               <span class="placeholder"
                 >Cliquez ici pour télécharger votre fichier</span
               >
             </label>
-            <input name="file" type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
+            <input name="file" type="file" id="file" accept=".pdf,.doc,.docx,.jpg,.png" />
           </div>
           <div class="form-item">
             <label for="request">S'agit-il d'une demande urgente?</label>
