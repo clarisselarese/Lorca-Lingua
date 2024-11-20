@@ -222,6 +222,11 @@
           id="contact-form"
           novalidate
         >
+          <input
+            type="hidden"
+            name="access_key"
+            value="26a5714a-9f84-453f-86aa-1e279e26588e"
+          />
           <div class="form-row">
             <div class="form-item">
               <label for="surname">Nom<span>*</span></label>
@@ -259,16 +264,6 @@
               required
             ></textarea>
             <div class="form-error" id="messageError"></div>
-          </div>
-          <div class="form-item form-upload">
-            <label>Joindre un document</label>
-            <label for="upload" class="upload-label">
-              <i class="fa-solid fa-cloud-arrow-up"></i>
-              <span class="placeholder"
-                >Cliquez ici pour télécharger votre fichier</span
-              >
-            </label>
-            <input name="file" type="file" id="upload" accept=".pdf,.doc,.docx,.jpg,.png" />
           </div>
           <div class="form-item">
             <label for="request">S'agit-il d'une demande urgente?</label>
@@ -335,6 +330,6 @@
       </div>
     </footer>
 
-    <script src="./form-validation.js"></script>
+    <script src="./JS/form-validation.js"></script>
   </body>
 </html>

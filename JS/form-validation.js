@@ -8,14 +8,34 @@ const errorMessages = {
 };
 
 const form = document.getElementById("contact-form");
+
+const nameInput = document.getElementById("name");
+const surnameInput = document.getElementById("surname");
+const enterpriseInput = document.getElementById("enterprise");
+const inputEmail = document.getElementById("email");
+const phoneNumberInput = document.getElementById("phoneNumber");
+const messageInput = document.getElementById("message");
+const conditionsCheckbox = document.getElementById("checkbox");
+const radios = document.querySelectorAll('input[name="urgent"]');
+
 form.addEventListener("submit", (e) => {
   if (!validate()) {
     e.preventDefault();
-  }else {
-    const form = document.getElementById("contact-form");
-    form.reset();
+  } else {
+    setTimeout(deleateData, 850);
   }
 });
+
+function deleateData() {
+  nameInput.value = "";
+  surnameInput.value = "";
+  enterpriseInput.value = "";
+  inputEmail.value = "";
+  phoneNumberInput.value = "";
+  messageInput.value = "";
+  radios.forEach((radio) => (radio.checked = false));
+  conditionsCheckbox.checked = false;
+}
 
 function validate() {
   const isNameValid = validateNameAndSurname("name");
@@ -53,7 +73,6 @@ function validateNameAndSurname(nameOrSurname) {
 }
 
 function validateEmail() {
-  const inputEmail = document.getElementById("email");
   const emailValue = inputEmail.value;
   const emailError = document.getElementById("emailError");
   emailError.textContent = "";
@@ -75,7 +94,6 @@ function validateEmail() {
 }
 
 function validatePhoneNumber() {
-  const phoneNumberInput = document.getElementById("phoneNumber");
   const phoneNumberValue = phoneNumberInput.value;
   const phoneNumberError = document.getElementById("phoneNumberError");
   phoneNumberError.textContent = "";
@@ -101,7 +119,6 @@ function validatePhoneNumber() {
 }
 
 function validateMessage() {
-  const messageInput = document.getElementById("message");
   const messageValue = messageInput.value;
   const messageError = document.getElementById("messageError");
   messageError.textContent = "";
@@ -115,7 +132,6 @@ function validateMessage() {
 }
 
 function validateConditions() {
-  const conditionsCheckbox = document.getElementById("checkbox");
   const conditionsError = document.getElementById("checkboxError");
   conditionsError.textContent = "";
 
@@ -125,9 +141,4 @@ function validateConditions() {
   } else {
     return true;
   }
-}
-
-function deleteFormData() {
-  const form = document.getElementById("contact-form");
-  form.reset();
 }

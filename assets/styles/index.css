@@ -44,6 +44,7 @@
 }
 .preheader .preheader-content .language {
   justify-self: end;
+  display: none;
 }
 .preheader .preheader-content .language a {
   display: -webkit-box;
