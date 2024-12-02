@@ -6,7 +6,7 @@
 }
 
 .hero {
-  margin-top: 140px;
+  margin-top: calc(6vh + 11vh);
 }
 
 @media (max-width: 920px) {
@@ -107,13 +107,13 @@
 nav {
   width: 85%;
   margin: 0 auto;
-  min-height: 9vh;
+  min-height: 11vh;
   display: grid;
   grid-template-columns: 30% 70%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px auto;
+  padding: 24px auto;
 }
 nav img {
   justify-self: start;
@@ -162,7 +162,7 @@ nav .language-mobile i {
   nav {
     width: 95%;
     margin: 0 auto;
-    margin: 24px auto;
+    padding: 24px auto;
   }
   nav ul {
     display: none;
@@ -792,7 +792,7 @@ footer .footer-container .footer-right .legal-container .legal-group {
 }
 
 body #header-sticky {
-  height: 140px;
+  height: calc(6vh + 11vh);
   width: 100%;
 }
 

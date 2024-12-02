@@ -1,10 +1,11 @@
 nav {
   @include widthGeneral;
-  min-height: 9vh;
+  min-height: $navbar-height;
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
-  margin: 24px auto;
+  padding: 24px auto;
+  
 
   img {
     justify-self: start;
@@ -52,7 +53,7 @@ nav {
   // MEDIA QUERIES -------------------------------------
   @media (max-width: 920px) {
     @include widthGeneral480px;
-    margin: 24px auto;
+    padding: 24px auto;
     
     ul {
       display: none;

@@ -8,8 +8,14 @@ $darkBlue: rgb(0, 53, 102);
 $lightBlue: rgb(0, 180, 189);
 $orange: rgb(236, 133, 29);
 
+
 // FONTS //
 $fontPrimary: "Cabin", sans-serif;
+
+//Sticky navbar
+$preheader-height: 6vh;
+$navbar-height: 11vh;
+$sticky-navbar-height: calc(#{$preheader-height} + #{$navbar-height});
 
 // ----- MIXINS ------ //
 @mixin widthGeneral {
