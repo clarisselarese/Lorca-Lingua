@@ -1,4 +1,14 @@
 @charset "UTF-8";
+#header-sticky {
+  position: fixed;
+  top: 0;
+  background: white;
+}
+
+.hero {
+  margin-top: 140px;
+}
+
 .preheader {
   border-bottom: 1.5px solid rgb(201, 212, 224);
 }
@@ -771,6 +781,11 @@ footer .footer-container .footer-right .legal-container .legal-group {
             align-items: center;
     gap: 24px;
   }
+}
+
+body #header-sticky {
+  height: 140px;
+  width: 100%;
 }
 
 * {
