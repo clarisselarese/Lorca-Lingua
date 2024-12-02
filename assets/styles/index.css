@@ -9,6 +9,14 @@
   margin-top: 140px;
 }
 
+@media (max-width: 920px) {
+  #header-sticky {
+    position: static;
+  }
+  .hero {
+    margin-top: 0;
+  }
+}
 .preheader {
   border-bottom: 1.5px solid rgb(201, 212, 224);
 }

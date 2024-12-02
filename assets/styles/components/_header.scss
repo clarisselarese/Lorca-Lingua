@@ -6,3 +6,12 @@
 .hero {
   margin-top: 140px;
 }
+
+@media (max-width: 920px) {
+  #header-sticky {
+    position: static;
+  }
+  .hero {
+    margin-top: 0;
+  }
+}
