@@ -145,7 +145,7 @@ nav .language-mobile i {
 }
 
 .hero {
-  height: 80vh;
+  height: 85vh;
   background: url(../img/Hero_BG.png) center/cover;
   display: flex;
   flex-direction: column;
@@ -314,6 +314,16 @@ nav .language-mobile i {
   background: rgb(0, 53, 102);
   color: rgb(246, 246, 246);
   padding: 96px 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #about .about-right h2 {
   color: rgb(246, 246, 246);

@@ -17,6 +17,9 @@
     background: $darkBlue;
     color: $white;
     padding: 96px 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h2 {
       color: $white;
