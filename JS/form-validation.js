@@ -17,6 +17,9 @@ const phoneNumberInput = document.getElementById("phoneNumber");
 const messageInput = document.getElementById("message");
 const conditionsCheckbox = document.getElementById("checkbox");
 const radios = document.querySelectorAll('input[name="urgent"]');
+const file = document.getElementById('file');
+
+console.log(file);
 
 form.addEventListener("submit", (e) => {
   if (!validate()) {
@@ -38,6 +41,8 @@ function deleateData() {
 }
 
 function validate() {
+  setPathForAttachedFile() 
+
   const isNameValid = validateNameAndSurname("name");
   const isSurnameValid = validateNameAndSurname("surname");
   const isEmailValid = validateEmail();
@@ -128,6 +133,16 @@ function validateMessage() {
     return false;
   } else {
     return true;
+  }
+}
+
+function setPathForAttachedFile() {
+    if (file.value !== '') {
+    form.removeAttribute('action')
+    form.setAttribute('action',"/send-email-with-file")
+  }else {
+    form.removeAttribute('action')
+    form.setAttribute('action',"/send-email")
   }
 }
 
