@@ -4,7 +4,7 @@ nav {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
-  padding: 24px auto;
+  padding: 24px 0;
   
 
   img {
@@ -53,7 +53,7 @@ nav {
   // MEDIA QUERIES -------------------------------------
   @media (max-width: 920px) {
     @include widthGeneral480px;
-    padding: 24px auto;
+    padding: 24px 0;
     
     ul {
       display: none;
