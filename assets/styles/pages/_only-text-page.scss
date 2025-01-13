@@ -23,5 +23,22 @@
         p {
             font-size: 18px;
         }
+
+        ol {
+            padding-left: 4%;
+
+            .bold-title {
+                font-weight: 700;
+            }
+
+            li {
+                font-size: 18px;
+            }
+        }
+
+        .normal-list {
+            list-style: initial;
+           padding-left: 3%;
+        }
     }
 }

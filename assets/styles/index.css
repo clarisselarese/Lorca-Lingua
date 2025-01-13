@@ -684,11 +684,23 @@ body #header-sticky {
 .only-text-page .text-container p {
   font-size: 18px;
 }
+.only-text-page .text-container ol {
+  padding-left: 4%;
+}
+.only-text-page .text-container ol .bold-title {
+  font-weight: 700;
+}
+.only-text-page .text-container ol li {
+  font-size: 18px;
+}
+.only-text-page .text-container .normal-list {
+  list-style: initial;
+  padding-left: 3%;
+}
 
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   box-sizing: border-box;
   font-family: cabin, sans-serif;
 }
@@ -759,4 +771,7 @@ label {
   .btn:hover {
     background-color: rgb(236, 133, 29);
   }
+}
+ul {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */

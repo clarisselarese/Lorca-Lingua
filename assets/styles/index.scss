@@ -9,12 +9,11 @@
 @import "./components/footer";
 @import "./pages/layout";
 @import "./pages/thank-you";
-@import "./pages/mention-legales";
+@import "./pages/only-text-page";
 
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   box-sizing: border-box;
   font-family: cabin, sans-serif;
 }
@@ -84,4 +83,8 @@ label {
   .btn:hover {
     background-color: $orange;
   }
+}
+
+ul {
+  list-style: none;
 }
