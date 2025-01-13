@@ -653,6 +653,11 @@ body #header-sticky {
     width: 100%;
   }
 }
+@media (max-width: 380px) {
+  .thank-you-page .content p {
+    text-align: center;
+  }
+}
 
 * {
   margin: 0;
@@ -677,7 +682,7 @@ body #header-sticky {
   background: rgb(0, 180, 189);
   color: rgb(246, 246, 246);
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .btn {
     font-size: 1rem;
   }

@@ -23,4 +23,12 @@
             width: 100%;
         }
     }
+
+    @media (max-width: 380px){
+        .content{
+            p {
+                text-align: center;
+            }
+        }
+    }
 }
