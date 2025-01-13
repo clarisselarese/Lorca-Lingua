@@ -1,0 +1,27 @@
+.only-text-page{
+    margin: 6vh 0;
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        color: $darkBlue;
+        line-height: 140%;
+
+        @include widthGeneral;
+
+        h1 {
+            @include titleSection;
+            text-align: center;
+        }
+        
+        h2{
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

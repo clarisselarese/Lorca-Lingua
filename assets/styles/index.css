@@ -659,6 +659,32 @@ body #header-sticky {
   }
 }
 
+.only-text-page {
+  margin: 6vh 0;
+}
+.only-text-page .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: rgb(0, 53, 102);
+  line-height: 140%;
+  width: 85%;
+  margin: 0 auto;
+}
+.only-text-page .text-container h1 {
+  color: rgb(0, 53, 102);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.only-text-page .text-container h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.only-text-page .text-container p {
+  font-size: 18px;
+}
+
 * {
   margin: 0;
   padding: 0;
