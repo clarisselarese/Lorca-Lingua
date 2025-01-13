@@ -625,6 +625,35 @@ body #header-sticky {
   width: 100%;
 }
 
+.thank-you-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you-page .content {
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+  width: 70%;
+  gap: 32px;
+}
+.thank-you-page .content h2 {
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 920px) {
+  .thank-you-page .content {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -647,6 +676,11 @@ body #header-sticky {
 .btn:hover {
   background: rgb(0, 180, 189);
   color: rgb(246, 246, 246);
+}
+@media (max-width: 375px) {
+  .btn {
+    font-size: 1rem;
+  }
 }
 
 h2 {

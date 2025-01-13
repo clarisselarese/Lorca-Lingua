@@ -8,6 +8,7 @@
 @import "./components/form";
 @import "./components/footer";
 @import "./pages/layout";
+@import "./pages/thank-you";
 
 * {
   margin: 0;
@@ -32,12 +33,14 @@
     background: $lightBlue;
     color: $white;
   }
+  @media (max-width: 375px) {
+    font-size: 1rem;
   }
+}
+
 
 h2 {
-  color: $darkBlue;
-  font-size: 2.5rem;
-  font-weight: 700;
+  @include titleSection;
   margin-bottom: 24px;
 
   // MEDIA QUERIES ------------------------------------------------------
