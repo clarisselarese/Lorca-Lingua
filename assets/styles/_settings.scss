@@ -41,5 +41,5 @@ $sticky-navbar-height: calc(#{$preheader-height} + #{$navbar-height});
 
 @mixin sectionShadow {
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 8px;   
 }

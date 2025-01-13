@@ -1,0 +1,44 @@
+.only-text-page{
+    margin: 6vh 0;
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        line-height: 160%;
+
+        @include widthGeneral;
+
+        h1 {
+            @include titleSection;
+            text-align: center;
+        }
+        
+        h2{
+            font-size: 1.5rem;
+            margin: 0;
+            padding-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        ol {
+            padding-left: 4%;
+
+            .bold-title {
+                font-weight: 700;
+            }
+
+            li {
+                font-size: 18px;
+            }
+        }
+
+        .normal-list {
+            list-style: initial;
+           padding-left: 3%;
+        }
+    }
+}
